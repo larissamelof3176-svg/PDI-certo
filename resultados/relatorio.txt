@@ -1,0 +1,29 @@
+RELATORIO DE PROCESSAMENTO DE IMAGEM
+Gerado em: 08/11/2026 11:09
+
+1. IMAGEM
+Nome: images.jpg
+Dimensoes: 365 x 547 px
+Canais: 3   Total de pixels: 199655
+Formato: JPEG   Tamanho: 36.7 KB
+
+2. DIAGNOSTICO INICIAL
+muito clara
+
+3. OPERACOES APLICADAS
+1. Correção gama γ=1.87
+
+4. JUSTIFICATIVA DA MELHORIA AUTOMATICA
+Diagnóstico inicial: Brilho médio 170.2 | desvio 60.4 | faixa 0–255 | ruído impulsivo 0.12% | σ ruído 2.8 → muito clara
+1. Correção gama γ=1.87: Imagem clara: brilho médio 170.2 fora da faixa [85, 170]. γ calculado para escurecer (γ > 1) até o alvo ≈ 120.
+Diagnóstico final: Brilho médio 134.2 | desvio 69.5 | faixa 0–255 | ruído impulsivo 0.11% | σ ruído 3.3 → equilibrada
+
+5. METRICAS ANTES / DEPOIS
+metrica          antes    depois     delta
+brilho          170.25    134.21    -36.03
+contraste        60.35     69.52     +9.17
+minimo            0.00      0.00     +0.00
+maximo          255.00    255.00     +0.00
+amplitude       255.00    255.00     +0.00
+
+Diagnostico final: equilibrada
