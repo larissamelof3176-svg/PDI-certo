@@ -10,6 +10,10 @@ Módulos da Pessoa 4 (P4):
                     binarização (+ Otsu)
     equalizacao  -> equalização de histograma (cinza e cor via luminância)
     automatico   -> diagnóstico e melhoria automática baseada em regras
+
+Módulos da Pessoa 5 (P5):
+    filtros      -> convolução com padding, média, mediana, nitidez
+    bordas       -> Sobel (Gx, Gy, magnitude)
 """
 
 from .pontuais import (
@@ -29,6 +33,21 @@ from .automatico import (
     melhorar,
     LimiaresDiagnostico,
 )
+from .filtros import (
+    convolucao,
+    filtro_media,
+    filtro_mediana,
+    nitidez,
+    kernel_media,
+    kernel_gaussiano,
+    OPERACOES_FILTROS,
+)
+from .bordas import (
+    gradiente_sobel,
+    magnitude_gradiente,
+    detectar_bordas,
+    OPERACOES_BORDAS,
+)
 
 __all__ = [
     "escala_cinza",
@@ -45,4 +64,16 @@ __all__ = [
     "melhorar_automaticamente",
     "melhorar",
     "LimiaresDiagnostico",
+    # P5
+    "convolucao",
+    "filtro_media",
+    "filtro_mediana",
+    "nitidez",
+    "kernel_media",
+    "kernel_gaussiano",
+    "OPERACOES_FILTROS",
+    "gradiente_sobel",
+    "magnitude_gradiente",
+    "detectar_bordas",
+    "OPERACOES_BORDAS",
 ]
