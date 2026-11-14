@@ -1,0 +1,14 @@
+# Sistema de Análise, Processamento e Melhoria de Imagens Digitais (PDI)
+# Seção 5 do escopo: "roda em Windows, Linux e macOS com requirements.txt"
+# Python 3.10+ (o código também roda em 3.9).
+
+numpy>=1.21          # toda a matemática do processamento
+Pillow>=9.0          # leitura/escrita de JPG, JPEG, PNG e BMP (RF-01)
+matplotlib>=3.5      # histogramas embutidos no Tkinter (RF-04)
+fpdf2>=2.7           # relatório em PDF (RF-12)
+pytest>=7.0          # testes automatizados (seção 12)
+
+# Opcional: a seção 7 do escopo pede o OpenCV "somente como referência para
+# validar os resultados", nunca como base do sistema. Sem ele, os testes que
+# comparam nossos resultados com os do OpenCV são pulados automaticamente.
+# opencv-python>=4.5
